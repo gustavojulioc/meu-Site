@@ -1,0 +1,619 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+  --cor-azul: #1A2040;
+  --cor-laranja: #EA7600;
+  --cor-branca: #F3F0EB;
+}
+
+body{
+  background-color: var(--cor-branca);
+  font-family: var(--font);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+header{
+  background-image: url(/Assents/background.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+nav{
+  padding: 3em 8em;
+  display: flex;
+  gap: 8em;
+  font-weight: 800;
+}
+
+.link-menu{
+  color: var(--cor-laranja);
+  text-decoration: none;
+}
+
+.banner{
+  padding: 0 8em 13.4em 8em;
+  display: flex;
+  gap: 6em;
+  align-items: center;
+}
+
+.foto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  width: 19em;
+}
+
+.baner__foto{
+  width: 19em;
+}
+
+.icones{
+  display: flex;
+  width: 15em;
+  justify-content: space-between;
+}
+
+.botao__orçamento__geral{
+  background-color: var(--cor-laranja);
+  color: var(--cor-branca);
+  padding: 1.5em 1.5em;
+  text-align: center;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.Titulo{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 2.5em;
+  
+}
+
+h1{
+  font-weight: 500;
+  font-size: 1.5em;
+  color: var(--cor-laranja);
+}
+
+.titulo__baner{
+  font-size: 3em;
+  color: var(--cor-branca);
+}
+
+.paragrafo__baner{
+  font-size: 1.25em;
+  color: var(--cor-branca);
+}
+
+Main{
+  padding: 10em 0 10em;
+  display: flex;
+  flex-direction: column;
+  gap: 9.5em;
+  color: var(--cor-azul);
+}
+
+.sobre__mim, .servicos, .portfolio{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 8em;
+  align-items: center;
+  gap: 6em;
+}
+
+.carreira, .skills, .depoimentos, .clientes{
+  display: flex;
+  justify-content: end;
+}
+
+.box{
+  margin: 5em 8em 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1.25em;
+  width: 50em;
+}
+
+.box__titulo{
+  font-size: 1.5em;
+  color: var(--cor-laranja);
+  font-weight: 700;
+}
+
+.box__subtitulo{
+  font-size: 2.5em;
+}
+
+.box__texto{
+  font-size: 1.25em;
+}
+
+.box__empregos{
+  border-bottom: 0.6em;
+}
+
+.box__periodo{
+  font-size: 1em;
+}
+
+.box__cargo{
+  font-size: 1.5em;
+}
+
+.box__servicos{
+  display: flex;
+  flex-direction: column;
+  gap: 1.25em;
+}
+
+.box__servicos-001{
+  display: flex;
+  gap: 1.25em;
+}
+
+.box__servicos-002{
+  display: flex;
+  gap: 1.25em;
+}
+
+.box__servico{
+  width: 15em;
+  padding: 1em;
+  text-align: center;
+  border: solid 1px var(--cor-azul);
+  border-radius: 20px;
+  height: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+}
+
+.box__servico__titulo{
+  font-size: 1.3em;
+}
+
+.box__servico__projetos{
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.skils__icones{
+  display: flex;
+  gap: 3.75em;
+}
+
+.box__portfolio{
+  width: 51em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25em;
+}
+
+.portfolio__001{
+  width: 100%;
+}
+
+.box__portilofio__duplo{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.25em;
+}
+
+.veja__mais{
+  text-align: center;
+  text-decoration: none;
+  color: var(--cor-laranja);
+  font-size: 1.5em;
+}
+
+
+.c-carousel__slide{
+  height: 27em;
+  width: 48em;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  border: solid 1px var(--cor-azul);
+  margin-right: 2.5em;
+  border-radius: 40px;
+  justify-content: space-between;
+}
+
+.depoimento__titulo{
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.depoimento__empresa{
+  font-size: 1.25em;
+}
+
+.depoimento__texto{
+  font-size: 1em;
+}
+
+.js-carousel--simple-prev{
+  margin: 1em;
+}
+
+.slide__titulo{
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+  margin-bottom: 1em;
+}
+
+footer{
+  background-color: var(--cor-azul);
+  display: flex;
+  padding: 4em 8em 1em 8em;
+  flex-direction: column;
+  gap: 4em;
+}
+
+.rodape__geral{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+
+.rodape{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: flex-start;
+}
+
+.rodape__titulo{
+  text-align: start;
+  font-size: 1.5em;
+  color: var(--cor-laranja);
+}
+
+.rodape__subtitulo{
+  font-size: 2.5em;
+  color: var(--cor-branca);
+}
+
+.rodape__botao{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.rodape__links{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  text-align: end;
+  font-size: 1.5em;
+}
+
+.assinatura{
+  text-align: center;
+  color: var(--cor-branca);
+  border-top: 4em;
+}
+
+.botao__orçamento__geral:hover{
+  box-shadow: 0px 0.1em 0.1em 0.1em rgba(254, 152, 0, 0.404);
+  border: solid 1px var(--cor-azul);
+  color: var(--cor-azul);
+  background-color: #ADAAA4;
+}
+
+.link-menu:hover{
+  color: var(--cor-branca);
+}
+
+.portfolio__001:hover{
+  box-shadow: 0px 10px 10px rgba(46, 56, 107, 0.445);
+  border-radius: 2.5em;
+}
+
+.portfolio__002:hover{
+  box-shadow: 0px 10px 10px rgba(46, 56, 107, 0.445);
+  border-radius: 2.5em;
+}
+
+
+.rodape__titulo{
+  margin-top: 2em;
+}
+
+.assinatura{
+  margin: 2em;
+}
+
+@media (max-width: 1200px) {
+
+  main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header{
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+    background-color: var(--cor-azul);
+    align-items: center;
+    justify-content: center;
+  }
+
+    nav{
+      font-size: 1.5em;
+      width: 90%;
+      justify-content: space-between;
+      gap: 1em;
+      margin: 1em;
+      padding: 1em;
+    }
+
+    .banner{
+      flex-direction: column;
+      width: 90%;
+      align-items: center;
+      justify-content: center;
+      padding: 1em;
+      gap: 1em;
+      margin: 1em;
+    }
+
+
+
+      .titulo{
+        align-items: center;
+        justify-content: center;
+      }
+
+      h1{
+        text-align: center;
+      }
+
+
+
+      .titulo__baner{
+        font-size: 2em;
+        width: 100%;
+        text-align: center;
+      }
+
+      .paragrafo__baner{
+        width: 100%;
+        text-align: center;
+      }
+
+  .box{
+    margin: 0;
+    width: 100%;
+  }
+
+  .sobre__mim{
+    flex-direction: column-reverse;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    gap: 1em;
+    margin: 1em;
+  }
+
+  .carreira{
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    gap: 1em;
+    margin: 1em;
+  }
+
+  .servicos{
+    flex-direction: column-reverse;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    gap: 1em;
+    margin: 1em;
+  }
+
+  .box__servicos{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .box__servicos-001, .box__servicos-002{
+    flex-direction: column;
+  }
+
+  .skills{
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    gap: 1em;
+    margin: 1em;
+  }
+
+  .skils__icones{
+    flex-wrap: nowrap;
+  }
+
+  .portfolio{
+    flex-direction: column-reverse;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    gap: 1em;
+    margin: 1em;
+  }
+
+  .box__portfolio{
+    width: 100%;
+  }
+
+  .depoimentos{
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1em;
+    gap: 1em;
+  }
+
+  footer{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding: 0;
+  }
+
+  .rodape__geral{
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rodape{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rodape__links{
+    justify-content: flex-start;
+  }
+  .link-menu{
+    text-align: start;
+  }
+
+  .rodape__links{
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  nav{
+    margin: 0;
+  }
+  
+  .titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    margin: 1em;
+  }
+
+  h1{
+    text-align: center;
+
+  }
+  
+  .skils__icones{
+    flex-wrap:wrap;
+  }
+
+  .box__portilofio__duplo{
+    width: 100%;
+    justify-content:space-between;
+  }
+
+  .portfolio__002{
+    width: 49%;
+  }
+}
+
+
+@media (max-width: 600px){
+  .link-menu{
+    display: none;
+  }
+
+  .titulo__baner{
+    font-size: 1.5em;
+  }
+
+  .titulo__baner{
+    font-size: 1.5em;
+  }
+
+  .titulo__baner{
+    margin: 0em;
+  }
+
+  .sobre__mim{
+    margin: 0;
+  }
+
+  .servicos, .portfolio, .skills, .banner, .clientes{
+    margin: 0;
+  }
+
+  .carreira{
+    margin: 0;
+  }
+
+  .box__servicos{
+    flex-direction: column;
+  }
+
+  .box__portilofio__duplo{
+    flex-direction: column;
+  }
+
+  .portfolio__002{
+    width: 100%;
+  }
+
+  .c-carousel__slide{
+    width: 100%;
+  }
+
+  .clientes{
+    margin: 1em;
+    padding: 1em;
+  }
+
+  .c-carousel__slide{
+    margin-right: 1em;
+    padding: 1em;
+    width: 90%;
+  }
+
+  .skils__icone{
+    width: 30%;
+  }
+
+  .rodape__subtitulo{
+    text-align: center;
+  }
+
+}
